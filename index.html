@@ -6,33 +6,84 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="header">
+    <a href="#" class="top-item">Task</a>
+</div>
 <form class="main" action="#">
+
+    <h1 class="text">General information</h1>
+
     <section class="container">
-        <h3>Total Information</h3>
-        <div><input type="file" class="image" name="image" value=""></div>
-        <img id="my-image" alt="" height="200">
-        <div class="row">Name: <input type="text" name="name" value=""></div>
-        <div class="row">Surname: <input type="text" name="surname" value=""></div>
-        <div class="row">Patronymic: <input type="text" name="patronymic" value=""></div>
-        <div class="row">Date of birth: <input type="date" name="birthday" value=""></div>
+        <div class="flex-container">
+            <div class="flex-item">Image</div>
+            <input type="file" class="image flex-item" name="image">
+            <img id="my-image" alt="">
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Name:</div>
+            <input class="flex-item item" type="text" name="name" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Surname:</div>
+            <input class="flex-item item" type="text" name="surname" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Patronymic:</div>
+            <input class="flex-item item" type="text" name="patronymic" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Date of birth:</div>
+            <input class="flex-item item" type="date" name="birthday" required>
+        </div>
     </section>
+
+    <h1 class="text">Education</h1>
+
     <section class="container">
-        <h3>Education</h3>
-        <div class="row">University: <input type="text" name="university"></div>
-        <div class="row">Faculty: <input type="text" name="faculty"></div>
-        <div class="row">Specialty: <input type="text" name="specialty"></div>
-        <div class="row">Graduated: <input type="month" name="graduated"></div>
+        <div class="flex-container">
+            <div class="row flex-item">University:</div>
+            <input class="flex-item item" type="text" name="university" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Faculty:</div>
+            <input class="flex-item item" type="text" name="faculty" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Specialty:</div>
+            <input class="flex-item item" type="text" name="specialty" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Graduated:</div>
+            <input class="flex-item item" type="month" name="graduated" required>
+        </div>
+
     </section>
+
+    <h1 class="text">Contact Information</h1>
+
     <section class="container">
-        <h3>Contact Information</h3>
-        <div class="row">Phone number: <input type ="tel" name="phone"></div>
-        <div class="row">E-mail: <input type="email" name="email"></div>
-        <div class="row">Skype: <input type="text" name="skype"></div>
-        <div class="row">Telegram: <input type="text" name="telegram"></div>
+        <div class="flex-container">
+            <div class="row flex-item">Phone number:</div>
+            <input class="flex-item item" type="tel" name="phone" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">E-mail:</div>
+            <input class="flex-item item" type="email" name="email" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Skype:</div>
+            <input class="flex-item item" type="text" name="skype" required>
+        </div>
+        <div class="flex-container">
+            <div class="row flex-item">Telegram:</div>
+            <input class="flex-item item" type="text" name="telegram" required>
+        </div>
     </section>
+
     <section class=container>
-        <button class="btn" type="submit">OK</button>
+        <button class="btn">OK</button>
     </section>
+
 </form>
 <script src="src/index.js"></script>
 </body>
