@@ -2,7 +2,22 @@ const form = document.querySelector('.main');
 const inputList = document.querySelectorAll('.row>input');
 const inputArr = Array.prototype.slice.call(inputList);
 const saveButton = document.querySelector('.btn');
+const imageFile = document.querySelector('.image');
 var inputsValue = {};
+
+imageFile.addEventListener('change', function (e) {
+    var selectedFile = e.target.files[0];
+    var reader = new FileReader();
+
+    var imgtag = document.getElementById("my-image");
+    imgtag.title = selectedFile.name;
+
+    reader.onload = function (e) {
+        imgtag.src = e.target.result;
+    };
+
+    reader.readAsDataURL(selectedFile);
+});
 
 function fileDownload(url) {
     let link = document.createElement('a');
