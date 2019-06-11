@@ -1,0 +1,36 @@
+@import url(reset.css);
+
+body {
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    background-color: rgba(47, 90, 98, 0.5);
+    border-radius: 3px;
+    width: 50%;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    justify-content: center;
+}
+
+.row {
+    width: 80%;
+}
