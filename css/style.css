@@ -1,26 +1,47 @@
 @import url(reset.css);
 
+@font-face {
+    font-family: 'Zilla Slab';
+    src: url("../assets/fonts/ZillaSlab-Regular.ttf") format("truetype");
+}
+
 body {
     margin: 0 auto;
+    font-family: 'Zilla Slab';
+    font-size: calc(0.3rem + 1vw);
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.main {
-    background-color: rgba(47, 90, 98, 0.5);
-    border-radius: 3px;
-    width: 50%;
-}
-
-.container {
-    margin: 0;
+.header {
     padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.top-item {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.top-item:hover {
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+.main, .container {
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: -webkit-box;
     display: -moz-box;
@@ -28,9 +49,36 @@ body {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: column wrap;
-    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.row {
+.text {
+    padding: 10px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.flex-container {
+    padding: 5px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
     width: 80%;
 }
+
+.btn {
+    width: 200px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 750px) {
+    .item {
+        width: 80%;
+    }
+}
+
